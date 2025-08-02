@@ -431,5 +431,30 @@ footer {
     height: auto; /* Permite que o conteúdo se ajuste */
     padding: 200px 20px; /* Mais espaço para o conteúdo */
   }
-}
+
+    .foto-perfil img {
+            width: 200px; /* Tamanho menor para telas pequenas */
+            height: 200px;
+        }
+    
+        #sobre p {
+            font-size: 1em; /* Tamanho de fonte menor */
+            text-align: center;
+        }
+
+        #sobre h2 {
+            font-size: 2em; /* Tamanho de fonte menor */
+            text-align: center;
+        }
+
+        .btn-sobre {
+            padding: 10px 20px; /* Tamanho do botão menor */
+            font-size: 16px; /* Tamanho da fonte do botão menor */
+            margin-left: 110px; /* Espaço à esquerda */
+        }
+
+        #projetos h2 {
+            font-size: 2em; /* Tamanho de fonte menor */
+        }
+    }
 
