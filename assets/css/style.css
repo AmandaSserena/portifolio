@@ -8,10 +8,18 @@
 }
 
 @keyframes degradeMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 body {
@@ -48,7 +56,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
-      text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 nav ul li a:hover {
@@ -64,19 +72,21 @@ nav ul li a:hover {
     text-align: center;
 }
 
- #inicio img{
+#inicio img {
     width: 200px;
     height: 200px;
     object-fit: cover;
 }
 
 #inicio #particles-js {
-    position: absolute; /* Posiciona as estrelas atrás do conteúdo */
+    position: absolute;
+    /* Posiciona as estrelas atrás do conteúdo */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Coloca as estrelas abaixo do conteúdo */
+    z-index: -1;
+    /* Coloca as estrelas abaixo do conteúdo */
 }
 
 #inicio h1 {
@@ -93,32 +103,45 @@ nav ul li a:hover {
 }
 
 #sobre {
-    padding: 80px 20px; /* Mais espaço para respirar */
-    display: flex; /* Layout em colunas */
-    justify-content: center; /* Centraliza os itens */
-    align-items: center; /* Alinha verticalmente */
-    gap: 50px; /* Espaço entre a imagem e o texto */
-    animation: fadeIn 2s ease; /* Animação de fade */
-    flex-wrap: wrap; /* Garante que se ajuste em telas menores */
+    padding: 80px 20px;
+    /* Mais espaço para respirar */
+    display: flex;
+    /* Layout em colunas */
+    justify-content: center;
+    /* Centraliza os itens */
+    align-items: center;
+    /* Alinha verticalmente */
+    gap: 50px;
+    /* Espaço entre a imagem e o texto */
+    animation: fadeIn 2s ease;
+    /* Animação de fade */
+    flex-wrap: wrap;
+    /* Garante que se ajuste em telas menores */
 }
 
 .foto-perfil img {
-    width: 300px; /* Imagem maior para mais destaque */
+    width: 300px;
+    /* Imagem maior para mais destaque */
     height: 300px;
     border-radius: 50%;
-    border: 6px solid #fff; /* Borda mais grossa */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Efeito de sombra */
+    border: 6px solid #fff;
+    /* Borda mais grossa */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* Efeito de sombra */
     object-fit: cover;
     transition: transform 0.5s ease;
 }
 
 .foto-perfil img:hover {
-    transform: scale(1.1); /* Zoom ao passar o mouse */
+    transform: scale(1.1);
+    /* Zoom ao passar o mouse */
 }
 
 .sobre-texto {
-    max-width: 600px; /* Limita a largura do texto */
-    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 600px;
+    /* Limita a largura do texto */
+    text-align: left;
+    /* Alinha o texto à esquerda */
 }
 
 
@@ -126,15 +149,17 @@ nav ul li a:hover {
     font-family: 'Fredoka', sans-serif;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ffffff; 
+    color: #ffffff;
     text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 #sobre p {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3em;
-    line-height: 1.8; /* Melhora a legibilidade */
-    color: #fff; /* Texto branco para contraste */
+    line-height: 1.8;
+    /* Melhora a legibilidade */
+    color: #fff;
+    /* Texto branco para contraste */
 }
 
 /* Botão personalizado para CTA */
@@ -152,14 +177,17 @@ nav ul li a:hover {
 
 .btn-sobre:hover {
     background: linear-gradient(90deg, #6A11CB, #2575FC);
-    transform: translateY(-5px); /* Efeito de flutuação */
+    transform: translateY(-5px);
+    /* Efeito de flutuação */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     #sobre {
-        flex-direction: column; /* Empilha na vertical em telas menores */
-        text-align: center; /* Centraliza o conteúdo */
+        flex-direction: column;
+        /* Empilha na vertical em telas menores */
+        text-align: center;
+        /* Centraliza o conteúdo */
     }
 
     .foto-perfil img {
@@ -171,46 +199,59 @@ nav ul li a:hover {
 
 .social-links {
     display: flex;
-    gap: 15px; /* Espaço entre os ícones */
+    gap: 15px;
+    /* Espaço entre os ícones */
     justify-content: center;
     margin-top: 20px;
 }
 
 .social-links a {
-    font-size: 24px; /* Tamanho dos ícones */
-    color: #ffffff; /* Cor dos ícones */
+    font-size: 24px;
+    /* Tamanho dos ícones */
+    color: #ffffff;
+    /* Cor dos ícones */
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
-      text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 .social-links a:hover {
-    color: #6a11cb; /* Muda a cor no hover */
-    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+    color: #6a11cb;
+    /* Muda a cor no hover */
+    transform: scale(1.2);
+    /* Efeito de zoom ao passar o mouse */
 }
 
 #projetos h2 {
     font-family: 'Fredoka', sans-serif;
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ffffff; /* Cor do título */
+    color: #ffffff;
+    /* Cor do título */
     text-align: center;
     text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
-#sobre, #projetos {
+#sobre,
+#projetos {
     padding: 60px 20px;
     text-align: center;
     animation: fadeIn 2s ease;
 }
 
 .projeto img {
-    width: 100%; /* Imagem responsiva */
-    max-width: 1000px; /* Limita a largura máxima */
-    height: auto; /* Mantém a proporção */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Sombra suave */
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    width: 100%;
+    /* Imagem responsiva */
+    max-width: 1000px;
+    /* Limita a largura máxima */
+    height: auto;
+    /* Mantém a proporção */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    margin-bottom: 20px;
+    /* Espaço abaixo da imagem */
 }
 
 .projeto {
@@ -220,7 +261,7 @@ nav ul li a:hover {
     border-radius: 16px;
     max-width: 1300px;
     color: #f1f1f1;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -255,7 +296,7 @@ nav ul li a:hover {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
-    
+
 }
 
 .projeto li {
@@ -276,8 +317,15 @@ nav ul li a:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .btn {
@@ -300,19 +348,26 @@ nav ul li a:hover {
 }
 
 .fade {
-    opacity: 0; /* Começa invisível */
-    transition: opacity 1.5s ease-in; /* Transição suave */
+    opacity: 0;
+    /* Começa invisível */
+    transition: opacity 1.5s ease-in;
+    /* Transição suave */
 }
 
 .fade.show {
-    opacity: 1; /* Fica visível */
+    opacity: 1;
+    /* Fica visível */
 }
+
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Inicia invisível */
+        opacity: 0;
+        /* Inicia invisível */
     }
+
     100% {
-        opacity: 1; /* Torna-se visível */
+        opacity: 1;
+        /* Torna-se visível */
     }
 }
 
@@ -326,48 +381,57 @@ footer {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
 .foto-perfil img {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 300px;
+    /* Ajuste o tamanho conforme necessário */
     height: 300px;
-    border-radius: 50%; /* Torna a imagem redonda */
-    border: 4px solid #fff; /* Adiciona uma borda branca ao redor da imagem */
-    object-fit: cover; /* Faz a imagem se ajustar ao contorno redondo */
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    border-radius: 50%;
+    /* Torna a imagem redonda */
+    border: 4px solid #fff;
+    /* Adiciona uma borda branca ao redor da imagem */
+    object-fit: cover;
+    /* Faz a imagem se ajustar ao contorno redondo */
+    margin-bottom: 20px;
+    /* Espaço abaixo da imagem */
 }
 
 
 
 /* Responsividade */
 @media (max-width: 1024px) {
-  .projeto {
-    padding: 30px 20px;
-    margin: 30px 15px;
-  }
+    .projeto {
+        padding: 30px 20px;
+        margin: 30px 15px;
+    }
 
-  .projeto h3 {
-    font-size: 1.3rem;
-  }
+    .projeto h3 {
+        font-size: 1.3rem;
+    }
 
-  .projeto p,
-  .projeto li {
-    font-size: 1rem;
-  }
+    .projeto p,
+    .projeto li {
+        font-size: 1rem;
+    }
 
-  .projeto img {
-    max-width: 100%;
-    height: auto;
-  }
+    .projeto img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        flex-direction: row;
     }
 
     #inicio h1 {
@@ -377,35 +441,66 @@ footer {
     #inicio p {
         font-size: 1.2em;
     }
-      .projeto {
-    padding: 25px 15px;
-    margin: 25px 10px;
-  }
 
-  .projeto h3 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
+    .projeto {
+        padding: 25px 15px;
+        margin: 25px 10px;
+    }
 
-  .projeto p,
-  .projeto li {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify;
-  }
+    .projeto h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
-  .projeto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
+    .projeto p,
+    .projeto li {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: justify;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
-  .projeto ul {
-    gap: 6px;
-  }
+    .projeto img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .projeto ul {
+        gap: 6px;
+    }
+
+    #sobre p {
+        font-size: 1.2em;
+        /* Tamanho de fonte menor */
+        text-align: center;
+    }
+
+    #sobre h2 {
+        font-size: 2em;
+        /* Tamanho de fonte menor */
+        text-align: center;
+    }
+
+        .btn-sobre {
+            padding: 10px 20px; /* Tamanho do botão menor */
+            font-size: 16px; /* Tamanho da fonte do botão menor */
+            margin-left: 210px; /* Espaço à esquerda */
+        }
+
 }
 
 @media (max-width: 480px) {
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        flex-direction: row;
+    }
+
     #inicio h1 {
         font-size: 1.8em;
     }
@@ -413,48 +508,67 @@ footer {
     #inicio p {
         font-size: 1em;
     }
-      .projeto {
-    padding: 20px 10px;
-    margin: 20px 8px;
-  }
 
-  .projeto h3 {
-    font-size: 1.1rem;
-  }
-
-  .projeto p,
-  .projeto li {
-    font-size: 0.9rem;
-  }
-
-  #inicio {
-    height: auto; /* Permite que o conteúdo se ajuste */
-    padding: 200px 20px; /* Mais espaço para o conteúdo */
-  }
-
-    .foto-perfil img {
-            width: 200px; /* Tamanho menor para telas pequenas */
-            height: 200px;
-        }
-    
-        #sobre p {
-            font-size: 1em; /* Tamanho de fonte menor */
-            text-align: center;
-        }
-
-        #sobre h2 {
-            font-size: 2em; /* Tamanho de fonte menor */
-            text-align: center;
-        }
-
-        .btn-sobre {
-            padding: 10px 20px; /* Tamanho do botão menor */
-            font-size: 16px; /* Tamanho da fonte do botão menor */
-            margin-left: 110px; /* Espaço à esquerda */
-        }
-
-        #projetos h2 {
-            font-size: 2em; /* Tamanho de fonte menor */
-        }
+    .projeto {
+        padding: 20px 10px;
+        margin: 20px 8px;
     }
 
+    .projeto h3 {
+        font-size: 1.1rem;
+    }
+
+    .projeto p,
+    .projeto li {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .projeto a {
+        font-size: 0.9rem;
+        /* Tamanho da fonte do link */
+        margin-bottom: 20px;
+        /* Espaço abaixo do link */
+    }
+
+    #inicio {
+        height: auto;
+        /* Permite que o conteúdo se ajuste */
+        padding: 200px 20px;
+        /* Mais espaço para o conteúdo */
+    }
+
+    .foto-perfil img {
+        width: 200px;
+        /* Tamanho menor para telas pequenas */
+        height: 200px;
+    }
+
+    #sobre p {
+        font-size: 1em;
+        /* Tamanho de fonte menor */
+        text-align: center;
+    }
+
+    #sobre h2 {
+        font-size: 2em;
+        /* Tamanho de fonte menor */
+        text-align: center;
+    }
+
+    .btn-sobre {
+        padding: 10px 20px;
+        /* Tamanho do botão menor */
+        font-size: 16px;
+        /* Tamanho da fonte do botão menor */
+        margin-left: 110px;
+        /* Espaço à esquerda */
+    }
+
+    #projetos h2 {
+        font-size: 2em;
+        /* Tamanho de fonte menor */
+    }
+}
