@@ -809,4 +809,8 @@ nav ul li a:hover {
         padding: 12px 24px;
     }
 
+    .container-contato {
+        gap:40px;
+    }
+
 }
