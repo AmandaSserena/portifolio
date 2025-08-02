@@ -104,44 +104,31 @@ nav ul li a:hover {
 
 #sobre {
     padding: 80px 20px;
-    /* Mais espaço para respirar */
     display: flex;
-    /* Layout em colunas */
     justify-content: center;
-    /* Centraliza os itens */
     align-items: center;
-    /* Alinha verticalmente */
-    gap: 50px;
-    /* Espaço entre a imagem e o texto */
+    gap: 80px;
     animation: fadeIn 2s ease;
-    /* Animação de fade */
     flex-wrap: wrap;
-    /* Garante que se ajuste em telas menores */
 }
 
 .foto-perfil img {
     width: 300px;
-    /* Imagem maior para mais destaque */
     height: 300px;
     border-radius: 50%;
-    border: 6px solid #fff;
-    /* Borda mais grossa */
+    border: 6px solid #ffffff;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    /* Efeito de sombra */
     object-fit: cover;
     transition: transform 0.5s ease;
 }
 
 .foto-perfil img:hover {
     transform: scale(1.1);
-    /* Zoom ao passar o mouse */
 }
 
 .sobre-texto {
     max-width: 600px;
-    /* Limita a largura do texto */
     text-align: left;
-    /* Alinha o texto à esquerda */
 }
 
 
@@ -155,11 +142,14 @@ nav ul li a:hover {
 
 #sobre p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.8;
-    /* Melhora a legibilidade */
     color: #fff;
-    /* Texto branco para contraste */
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+    margin-bottom: 20px;
+    text-align: justify;
+    max-width: 600px;
+    margin-right: 20px;
 }
 
 /* Botão personalizado para CTA */
@@ -184,33 +174,40 @@ nav ul li a:hover {
 /* Carrossel */
 
 .carrossel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  margin-bottom: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+
 }
 
 .carrossel-track {
-  display: flex;
-  gap: 40px;
-  animation: scroll 25s linear infinite;
-  align-items: center;
+    display: flex;
+    gap: 40px;
+    animation: scroll 25s linear infinite;
+    align-items: center;
 }
 
 .carrossel-track img {
-  height: 80px;
-  width: auto;
-  filter: brightness(0) invert(1); /* Deixa os ícones brancos visíveis em fundo escuro */
-  transition: transform 0.3s ease;
+    height: 80px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    /* Deixa os ícones brancos visíveis em fundo escuro */
+    transition: transform 0.3s ease;
 }
 
 .carrossel-track img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -313,6 +310,8 @@ nav ul li a:hover {
     line-height: 1.7;
     text-align: center;
     animation: fadeIn 1.2s ease-in-out forwards;
+
+    
 }
 
 .projeto ul {
@@ -517,11 +516,14 @@ footer {
         text-align: center;
     }
 
-        .btn-sobre {
-            padding: 10px 20px; /* Tamanho do botão menor */
-            font-size: 16px; /* Tamanho da fonte do botão menor */
-            margin-left: 210px; /* Espaço à esquerda */
-        }
+    .btn-sobre {
+        padding: 10px 20px;
+        /* Tamanho do botão menor */
+        font-size: 16px;
+        /* Tamanho da fonte do botão menor */
+        margin-left: 210px;
+        /* Espaço à esquerda */
+    }
 
 }
 
