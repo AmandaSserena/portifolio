@@ -303,7 +303,7 @@ nav ul li a:hover {
     font-family: 'Fredoka', sans-serif;
     font-size: 1.5rem;
     margin: 30px 0 30px 0;
-    color: hsl(286, 67%, 84%);
+    color: hsl(0, 0%, 100%);
     text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 
 }
@@ -328,7 +328,7 @@ nav ul li a:hover {
 
 .projeto li::before {
     content: "•";
-    color: #7B1FA2;
+    color: #b569d5;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -342,7 +342,7 @@ nav ul li a:hover {
 }
 
 .projeto a {
-    color: #c97de9;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
 }
