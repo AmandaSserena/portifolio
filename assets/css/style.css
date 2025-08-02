@@ -48,6 +48,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
+      text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 nav ul li a:hover {
@@ -82,11 +83,13 @@ nav ul li a:hover {
     font-family: fredoka, sans-serif;
     font-size: 3em;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 #inicio p {
     font-size: 1.5em;
     font-family: quicksand, sans-serif;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 #sobre {
@@ -118,14 +121,13 @@ nav ul li a:hover {
     text-align: left; /* Alinha o texto à esquerda */
 }
 
+
 #sobre h2 {
     font-family: 'Fredoka', sans-serif;
-    font-size: 3em; /* Título maior */
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    -webkit-background-clip: text; /* Aplica o gradiente no texto */
-    background-clip: text; /* Suporte para navegadores modernos */
-    color: transparent; /* Deixa o fundo visível */
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #ffffff; 
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 #sobre p {
@@ -179,6 +181,7 @@ nav ul li a:hover {
     color: #ffffff; /* Cor dos ícones */
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
+      text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 .social-links a:hover {
@@ -186,6 +189,14 @@ nav ul li a:hover {
     transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
 }
 
+#projetos h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Cor do título */
+    text-align: center;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+}
 
 #sobre, #projetos {
     padding: 60px 20px;
@@ -193,25 +204,81 @@ nav ul li a:hover {
     animation: fadeIn 2s ease;
 }
 
-.projeto {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+.projeto img {
+    width: 100%; /* Imagem responsiva */
+    max-width: 1000px; /* Limita a largura máxima */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Sombra suave */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 
+.projeto {
+    background: #1e1e2f;
+    padding: 40px 30px;
+    margin: 40px auto;
+    border-radius: 16px;
+    max-width: 1300px;
+    color: #f1f1f1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
 .projeto h3 {
-    font-family: fredoka, sans-serif;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    margin: 30px 0 30px 0;
+    color: hsl(286, 67%, 84%);
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+
 }
 
 .projeto p {
-    font-family: quicksand, sans-serif;
-    font-size: 1.2em;
-    animation: fadeIn 1.5s ease-in forwards;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out forwards;
 }
 
+.projeto ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    display: grid;
+    gap: 8px;
+}
+
+.projeto li::before {
+    content: "•";
+    color: #7B1FA2;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    
+}
+
+.projeto li {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.projeto a {
+    color: #c97de9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.projeto a:hover {
+    text-decoration: underline;
+    color: #7B1FA2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 .btn {
     margin-top: 50px;
@@ -265,8 +332,8 @@ footer {
 }
 
 .foto-perfil img {
-    width: 250px; /* Ajuste o tamanho conforme necessário */
-    height: 250px;
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: 300px;
     border-radius: 50%; /* Torna a imagem redonda */
     border: 4px solid #fff; /* Adiciona uma borda branca ao redor da imagem */
     object-fit: cover; /* Faz a imagem se ajustar ao contorno redondo */
@@ -275,8 +342,29 @@ footer {
 
 
 
-
 /* Responsividade */
+@media (max-width: 1024px) {
+  .projeto {
+    padding: 30px 20px;
+    margin: 30px 15px;
+  }
+
+  .projeto h3 {
+    font-size: 1.3rem;
+  }
+
+  .projeto p,
+  .projeto li {
+    font-size: 1rem;
+  }
+
+  .projeto img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -289,6 +377,32 @@ footer {
     #inicio p {
         font-size: 1.2em;
     }
+      .projeto {
+    padding: 25px 15px;
+    margin: 25px 10px;
+  }
+
+  .projeto h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .projeto p,
+  .projeto li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .projeto ul {
+    gap: 6px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -299,5 +413,23 @@ footer {
     #inicio p {
         font-size: 1em;
     }
+      .projeto {
+    padding: 20px 10px;
+    margin: 20px 8px;
+  }
+
+  .projeto h3 {
+    font-size: 1.1rem;
+  }
+
+  .projeto p,
+  .projeto li {
+    font-size: 0.9rem;
+  }
+
+  #inicio {
+    height: auto; /* Permite que o conteúdo se ajuste */
+    padding: 400px 20px; /* Mais espaço para o conteúdo */
+  }
 }
 
