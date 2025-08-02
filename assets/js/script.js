@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     particlesJS("particles-js", {
         particles: {
             number: {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("scroll", function() {
+document.addEventListener("scroll", function () {
     const fadeElements = document.querySelectorAll(".fade");
     fadeElements.forEach(element => {
         const rect = element.getBoundingClientRect();
@@ -67,17 +67,17 @@ document.addEventListener("scroll", function() {
 //Carrossel
 
 document.addEventListener("DOMContentLoaded", () => {
-  const track = document.getElementById("carrossel-track");
-  const icons = Array.from(track.children);
-  const totalWidth = track.scrollWidth;
-  const containerWidth = track.parentElement.offsetWidth;
+    const track = document.getElementById("carrossel-track");
+    const icons = Array.from(track.children);
+    const totalWidth = track.scrollWidth;
+    const containerWidth = track.parentElement.offsetWidth;
 
-  // Clona os ícones até que a largura seja suficiente para looping
-  while (track.scrollWidth < containerWidth * 2) {
-    icons.forEach((icon) => {
-      const clone = icon.cloneNode(true);
-      track.appendChild(clone);
-    });
-  }
+    // Clona os ícones até que a largura seja suficiente para looping
+    while (track.scrollWidth < containerWidth * 2) {
+        icons.forEach((icon) => {
+            const clone = icon.cloneNode(true);
+            track.appendChild(clone);
+        });
+    }
 });
 

@@ -192,7 +192,6 @@ nav ul li a:hover {
     height: 80px;
     width: auto;
     filter: brightness(0) invert(1);
-    /* Deixa os ícones brancos visíveis em fundo escuro */
     transition: transform 0.3s ease;
 }
 
@@ -285,15 +284,18 @@ nav ul li a:hover {
 }
 
 .projeto {
-  background: rgba(0, 0, 0, 0.5); /* Fundo escuro e translúcido */
-  padding: 40px 30px;
-  margin: 40px auto;
-  border-radius: 16px;
-  max-width: 1300px;
-  color: #f1f1f1;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Sombra suave para realce */
-  backdrop-filter: blur(8px); /* Efeito vidro (Glassmorphism) */
-  -webkit-backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo escuro e translúcido */
+    padding: 40px 30px;
+    margin: 40px auto;
+    border-radius: 16px;
+    max-width: 1300px;
+    color: #f1f1f1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    /* Sombra suave para realce */
+    backdrop-filter: blur(8px);
+    /* Efeito vidro (Glassmorphism) */
+    -webkit-backdrop-filter: blur(8px);
 }
 
 
@@ -313,7 +315,7 @@ nav ul li a:hover {
     text-align: center;
     animation: fadeIn 1.2s ease-in-out forwards;
 
-    
+
 }
 
 .projeto ul {
@@ -406,132 +408,164 @@ nav ul li a:hover {
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 40px 20px;
-  color: white;
-  text-align: center;
-  margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
 }
 
 .footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .footer-logo img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
 }
 
 .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-links a {
-  font-size: 24px;
-  color: #ffffff;
-  transition: transform 0.3s ease, color 0.3s ease;
-  text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+    font-size: 24px;
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 .footer-links a:hover {
-  color: #6a11cb;
-  transform: scale(1.2);
+    color: #6a11cb;
+    transform: scale(1.2);
 }
 
 .footer-copy {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 0.95rem;
-  opacity: 0.8;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95rem;
+    opacity: 0.8;
 }
 
 
 .foto-perfil img {
     width: 300px;
-    /* Ajuste o tamanho conforme necessário */
     height: 300px;
     border-radius: 50%;
-    /* Torna a imagem redonda */
     border: 4px solid #fff;
-    /* Adiciona uma borda branca ao redor da imagem */
     object-fit: cover;
-    /* Faz a imagem se ajustar ao contorno redondo */
     margin-bottom: 20px;
-    /* Espaço abaixo da imagem */
 }
 
-/*Contato*/
-
 .contato-section {
-  padding: 80px 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
+    padding: 80px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin-bottom: 100px;
 }
 
 .container-contato {
-  max-width: 700px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.container-contato h2 {
-  font-size: 2.5rem;
-  font-family: 'Fredoka', sans-serif;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+.bloco-esquerdo img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
 }
 
-.container-contato p {
-  font-size: 1.2rem;
-  font-family: 'Quicksand', sans-serif;
-  margin-bottom: 40px;
-  line-height: 1.6;
+.bloco-direito {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.bloco-direito h2 {
+    font-size: 2.5rem;
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
+}
+
+.bloco-direito p {
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
 }
 
 .form-contato {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-contato input,
 .form-contato textarea {
-  padding: 15px 20px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  color: #333;
-  font-family: 'Quicksand', sans-serif;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .form-contato input:focus,
 .form-contato textarea:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #6a11cb;
+    outline: none;
+    box-shadow: 0 0 0 2px #6a11cb;
 }
 
 .form-contato button {
-  padding: 14px 30px;
-  background: linear-gradient(90deg, #8A2BE2, #6A11CB);
-  border: none;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #8A2BE2, #6A11CB);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .form-contato button:hover {
-  background: linear-gradient(90deg, #6A11CB, #2575FC);
-  transform: translateY(-2px);
+    background: linear-gradient(90deg, #6A11CB, #2575FC);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .container-contato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bloco-esquerdo img {
+        max-width: 250px;
+    }
+
+    .bloco-direito {
+        padding: 20px;
+    }
 }
 
 
@@ -627,6 +661,19 @@ nav ul li a:hover {
         /* Espaço à esquerda */
     }
 
+    .container-contato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bloco-esquerdo img {
+        max-width: 250px;
+    }
+
+    .bloco-direito {
+        padding: 20px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -678,9 +725,9 @@ nav ul li a:hover {
     }
 
     .foto-perfil img {
-        width: 200px;
+        width: 300px;
         /* Tamanho menor para telas pequenas */
-        height: 200px;
+        height: 300px;
     }
 
     #sobre p {
@@ -708,4 +755,58 @@ nav ul li a:hover {
         font-size: 2em;
         /* Tamanho de fonte menor */
     }
+
+    .carrossel-track img {
+        height: 60px;
+        width: auto;
+    }
+
+    .carrossel-track {
+        animation-duration: 8s;
+    }
+
+    .container-contato h2 {
+        font-size: 2rem;
+    }
+
+    .container-contato p {
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .form-contato input,
+    .form-contato textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .form-contato button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .footer-copy {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .bloco-direito h2 {
+        font-size: 1.8rem;
+    }
+
+    .bloco-direito p {
+        font-size: 1rem;
+    }
+
+    .form-contato input,
+    .form-contato textarea {
+        font-size: 0.95rem;
+    }
+
+    .form-contato button {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
 }
