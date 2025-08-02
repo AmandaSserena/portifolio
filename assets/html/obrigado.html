@@ -4,18 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Obrigado!</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Fredoka', sans-serif;
-      color: white;
       background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff758c, #ff7eb3);
       background-size: 300% 300%;
       animation: degradeMove 8s ease infinite;
-      overflow: hidden;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
       text-align: center;
+      padding: 20px;
+      overflow: hidden;
     }
 
     #particles-js {
@@ -28,38 +39,37 @@
     }
 
     .mensagem-obrigado {
-      position: relative;
-      top: 40%;
-      transform: translateY(-50%);
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 40px;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      width: 100%;
+      animation: fadeIn 1.5s ease forwards;
     }
 
     .mensagem-obrigado h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
       text-shadow: 2px 2px 8px #6a11cb, 0 0 4px #2575fc;
     }
 
     .mensagem-obrigado p {
-      font-size: 1.2rem;
       font-family: 'Quicksand', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
     }
 
     .mensagem-obrigado a {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
+      text-decoration: none;
+      background: linear-gradient(90deg, #8A2BE2, #6A11CB);
+      padding: 12px 28px;
       font-size: 1rem;
       color: white;
-      background: linear-gradient(90deg, #8A2BE2, #6A11CB);
-      border-radius: 12px;
-      text-decoration: none;
-      transition: background 0.3s ease, transform 0.3s ease;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      display: inline-block;
     }
 
     .mensagem-obrigado a:hover {
@@ -72,6 +82,21 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      .mensagem-obrigado h1 {
+        font-size: 1.8rem;
+      }
+
+      .mensagem-obrigado p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -79,21 +104,21 @@
 
   <div class="mensagem-obrigado">
     <h1>Obrigado pelo contato! 💌</h1>
-    <p>Recebi sua mensagem e em breve entrarei em contato com você.</p>
-    <a href="index.html">Voltar para o início</a>
+    <p>Sua mensagem foi enviada com sucesso. Em breve entrarei em contato com você.</p>
+    <a href="/index.html">Voltar para o início</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
     particlesJS("particles-js", {
       particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
+        number: { value: 90, density: { enable: true, value_area: 800 } },
         shape: { type: "star" },
-        opacity: { value: 0.7, random: true },
-        size: { value: 4, random: true },
+        opacity: { value: 0.6, random: true },
+        size: { value: 3, random: true },
         move: {
           enable: true,
-          speed: 1.2,
+          speed: 1,
           direction: "none",
           out_mode: "out"
         }
@@ -104,8 +129,8 @@
           onclick: { enable: true, mode: "push" }
         },
         modes: {
-          repulse: { distance: 100, duration: 0.4 },
-          push: { particles_nb: 4 }
+          repulse: { distance: 80, duration: 0.4 },
+          push: { particles_nb: 3 }
         }
       },
       retina_detect: true
