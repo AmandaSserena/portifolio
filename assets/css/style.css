@@ -181,6 +181,39 @@ nav ul li a:hover {
     /* Efeito de flutuação */
 }
 
+/* Carrossel */
+
+.carrossel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.carrossel-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 25s linear infinite;
+  align-items: center;
+}
+
+.carrossel-track img {
+  height: 80px;
+  width: auto;
+  filter: brightness(0) invert(1); /* Deixa os ícones brancos visíveis em fundo escuro */
+  transition: transform 0.3s ease;
+}
+
+.carrossel-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     #sobre {

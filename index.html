@@ -8,9 +8,21 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./assets/icon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/icon/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/favicon-192x192.png">
+    <link rel="shortcut icon" href="favicon.ico" type="./assets/icon/image/x-icon">
+
+
 </head>
 
 <body>
+
+    <!-- Menu de navegação -->
     <header id="menu">
         <nav>
             <ul>
@@ -21,9 +33,9 @@
         </nav>
     </header>
 
+    <!-- Seção de início com partículas animadas -->
     <section id="inicio">
-
-        <div id="particles-js"></div> <!-- Estrelas no fundo -->
+        <div id="particles-js"></div>
         <div class="intro">
             <img src="./assets/img/perfil.png" alt="Amanda Serena">
             <h1>Amanda Serena</h1>
@@ -42,6 +54,23 @@
         </div>
     </section>
 
+    <section id="tecnologias">
+        <div class="carrossel">
+            <div class="carrossel-track" id="carrossel-track">
+                <img src="./assets/icon/html.png" alt="HTML">
+                <img src="./assets/icon/css.png" alt="CSS">
+                <img src="./assets/icon/java-script.png" alt="JavaScript">
+                <img src="./assets/icon/atom.png" alt="React">
+                <img src="./assets/icon/wordpress.png" alt="WordPress">
+                <img src="./assets/icon/php.png" alt="PHP">
+                <img src="./assets/icon/database.png" alt="MySQL">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Seção Sobre Mim -->
     <section id="sobre" class="fade">
         <div class="foto-perfil">
             <img src="./assets/img/amanda.webp" alt="Minha Foto">
@@ -49,15 +78,24 @@
         <div class="sobre-texto">
             <h2>Sobre Mim</h2>
             <p>
-                Sou apaixonada por tecnologia e design! Com experiência em desenvolvimento web e foco em soluções
-                criativas, transformo ideias em interfaces elegantes e funcionais.
+                Sou apaixonada por <strong>tecnologia</strong>, <strong>design</strong> e <strong>experiências
+                    digitais</strong> que encantam.
+                Tenho experiência no desenvolvimento de interfaces <em>modernas, responsivas e funcionais</em> aliando
+                criatividade e código para transformar ideias em soluções visuais elegantes e eficientes.
+            </p>
+            <p>
+                Meu foco é criar projetos com <strong>impacto real</strong>, combinando <strong>usabilidade</strong>,
+                <strong>estética</strong> e <strong>performance</strong>.
+                A cada linha de código, busco entregar <em>valor, clareza e propósito</em>.
             </p>
             <a href="./assets/pdf/CurriculoAmandaSerena.pdf" target="_blank" class="btn-sobre">Baixar Currículo</a>
         </div>
     </section>
 
+    <!-- Seção de Projetos -->
     <section id="projetos">
         <h2>Meus Projetos</h2>
+
         <div class="projeto">
             <h3>Instituto Somos Aldeia</h3>
             <img src="./assets/img/aldeia.png" alt="Imagem do Projeto 1">
@@ -89,7 +127,7 @@
                 <li><a href="https://institutosomosaldeia.vercel.app/index.html" target="_blank">Página inicial</a></li>
             </ul>
         </div>
-        <!-- Adicione mais projetos conforme necessário -->
+
         <div class="projeto">
             <h3>Thrive Digital MKT</h3>
             <img src="./assets/img/thrive.png" alt="Imagem do Projeto Thrive Digital MKT">
@@ -153,14 +191,19 @@
             </ul>
         </div>
 
-
     </section>
 
+    <!--Footer-->
     <footer>
         <p>&copy; 2025 Amanda Serena. Todos os direitos reservados.</p>
     </footer>
+
 </body>
+
+<!-- Particles.js script -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!--js -->
 <script src="./assets/js/script.js"></script>
 
 </html>

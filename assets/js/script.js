@@ -61,3 +61,23 @@ document.addEventListener("scroll", function() {
         }
     });
 });
+
+
+
+//Carrossel
+
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("carrossel-track");
+  const icons = Array.from(track.children);
+  const totalWidth = track.scrollWidth;
+  const containerWidth = track.parentElement.offsetWidth;
+
+  // Clona os ícones até que a largura seja suficiente para looping
+  while (track.scrollWidth < containerWidth * 2) {
+    icons.forEach((icon) => {
+      const clone = icon.cloneNode(true);
+      track.appendChild(clone);
+    });
+  }
+});
+
