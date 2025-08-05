@@ -66,8 +66,10 @@ cd portifolio
 
 ## 📌 Melhorias futuras (sugestões)
 
-* Formulário de contato funcional com envio por e-mail
-* Animações adicionais com JavaScript
+* Criação de um blog
+* Tema escuro (Dark Mode)
+
+
 
 ---
 
@@ -84,5 +86,6 @@ Este projeto está sob a licença [MIT](LICENSE).
 Sinta-se à vontade para usar como base para o seu próprio portfólio.
 
 ---
+
 
 
