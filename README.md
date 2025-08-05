@@ -5,9 +5,7 @@ O objetivo é apresentar de forma visual e profissional os principais projetos, 
 
 🔗 **Acesse o site online:**  
 👉 https://portifolio-amanda-serena.vercel.app/
-
-📁 **Repositório no GitHub:**  
-👉 https://github.com/AmandaSserena/portifolio
+o
 
 ---
 
@@ -86,4 +84,5 @@ Este projeto está sob a licença [MIT](LICENSE).
 Sinta-se à vontade para usar como base para o seu próprio portfólio.
 
 ---
+
 
