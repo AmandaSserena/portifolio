@@ -87,9 +87,3 @@ Sinta-se à vontade para usar como base para o seu próprio portfólio.
 
 ---
 
-```
-
----
-
-Se quiser, posso te entregar esse conteúdo já como arquivo `README.md` pronto para download. Deseja?
-```
